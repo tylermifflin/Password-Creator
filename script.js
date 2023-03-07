@@ -11,6 +11,8 @@ function generatePassword() {
   console.log(response);
   var response = prompt("Do you want to include numbers?");
   console.log(response);
+  var response = prompt("Do you want to include special characters?");
+  console.log(response);
 }
   // check if password length is between 8 and 128 characters
   // if (passwordLength < 8 || passwordLength > 128) {
