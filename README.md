@@ -1,2 +1,9 @@
 # Password-Creator
-This app will help you create secure passwords.
+# This app will help you create secure passwords. The Purpose of this project is to help users create strong passwords to protect any sensitive information that they have access to. This app will help users create random passwords quickly and effortlessly to save them time from thinking up new passwords themselves.
+# Usage: This app will give the user a series of questions that they will need to answer. The first will ask the user how long they want their password to be. The requirements are that the password length must be between 8 and 128 characters. If the user doesn't answer in this range, the app will not work and make them start over. The second question will ask them if they want to include lowercase letters. The third question will ask if they want to include uppercase letters. The fourth question will ask if they want to include numbers. The last question will ask if they want to include special characters. The user must include at least one of the requirements of lowercase letters, uppercase letters, numbers, or special characters. If they don't include at least one of the requirements, the app will stop and make them start over. After they fill out the questions correctly, the app will create a random secure password for them to use.
+# Noteworthy features: 
+- this app is made possible using functions with Javascript, I needed to create unique variables and use multiple arrays.
+- I needed to use multiple if statements to make sure that the necessary criteria was met before creating the password.
+- I used math.floor and math.random to help me use the data given in my included characters variable depending on what the user answers to create a random password.
+
+Here is a screenshot of my Password Creator Application and a link to the application if you are in need of a new secure password: 
