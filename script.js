@@ -37,6 +37,13 @@ function generatePassword() {
     alert("You must select at least one character type to generate a password");
     return "";  
   }
+  if (length >  8 || length < 128) {  
+    var password = "";
+    for (var i = 0; i < length; i++) {
+      password += includedcharacters.charAt(Math.floor(Math.random() * includedcharacters.length));
+    }
+    return password;
+  }
 
 }
 
