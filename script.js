@@ -15,6 +15,11 @@ function generatePassword() {
   console.log(includenumbers);
   var includespecialcharacters = confirm("Do you want to include special characters?");
   console.log(includespecialcharacters);
+// if statement to make sure the length is between 8 and 128 characters, if not alert user and make the function stop
+  if (length < 8 || length > 128) {
+    alert("Password length must be between 8 and 128 characters");
+    return "";
+  }
 // stored variables of arrays for lowercase, uppercase, numbers, and special characters
   var lowercase = "abcdefghijklmnopqrstuvwxyz";
   var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
