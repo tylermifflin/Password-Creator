@@ -6,7 +6,7 @@ function generatePassword() {
   // promp user for password length
   var length = prompt("How many characters would you like your password to be? Length must be between 8 and 128 characters");
   console.log(length);
-  
+  // confirm for lowercase, uppercase, numbers, and special characters, either true or false
   var includelowercase = confirm("Do you want to include lowercase letters?");
   console.log(includelowercase);
   var includeuppercase = confirm("Do you want to include uppercase letters?");
@@ -15,7 +15,7 @@ function generatePassword() {
   console.log(includenumbers);
   var includespecialcharacters = confirm("Do you want to include special characters?");
   console.log(includespecialcharacters);
-
+// stored variables of arrays for lowercase, uppercase, numbers, and special characters
   var lowercase = "abcdefghijklmnopqrstuvwxyz";
   var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var numbers = "0123456789";
