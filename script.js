@@ -20,23 +20,30 @@ function generatePassword() {
   var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var numbers = "0123456789";
   var specialcharacters = "!@#$%^&*()_+~`|}{[]\:;?><,./-=";
+  // created var includedcharacters for an empty string to store included characters
   var includedcharacters = "";
+  // if statement to add included character for lowercase to the empty string
   if (includelowercase === true) {
     includedcharacters += lowercase;
   }
+  // if statement to add included character for uppercase to the empty string
   if (includeuppercase === true) {
     includedcharacters += uppercase;
   }
+  // if statement to add included character for numbers to the empty string
   if (includenumbers === true) {
     includedcharacters += numbers;
   }
+  // if statement to add included character for special characters to the empty string
   if (includespecialcharacters === true) {
     includedcharacters += specialcharacters;
   }
+  // if statement to alert user if no character types are selected and make the function stop
   if (includelowercase === false && includeuppercase === false && includenumbers === false && includespecialcharacters === false) {
     alert("You must select at least one character type to generate a password");
     return "";  
   }
+  // if statement to make sure the length is between 8 and 128 characters, using var i to generate random characters from the included characters from using math.random and math.floor
   if (length >  8 || length < 128) {  
     var password = "";
     for (var i = 0; i < length; i++) {
