@@ -22,16 +22,20 @@ function generatePassword() {
   var specialcharacters = "!@#$%^&*()_+~`|}{[]\:;?><,./-=";
   var includedcharacters = "";
   if (includelowercase === true) {
-    password += lowercase;
+    includedcharacters += lowercase;
   }
   if (includeuppercase === true) {
-    password += uppercase;
+    includedcharacters += uppercase;
   }
   if (includenumbers === true) {
-    password += numbers;
+    includedcharacters += numbers;
   }
   if (includespecialcharacters === true) {
-    password += specialcharacters;
+    includedcharacters += specialcharacters;
+  }
+  if (includelowercase === false && includeuppercase === false && includenumbers === false && includespecialcharacters === false) {
+    alert("You must select at least one character type to generate a password");
+    return "";  
   }
 
 }
