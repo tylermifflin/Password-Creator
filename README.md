@@ -6,4 +6,5 @@
 - I needed to use multiple if statements to make sure that the necessary criteria was met before creating the password.
 - I used math.floor and math.random to help me use the data given in my included characters variable depending on what the user answers to create a random password.
 
-Here is a screenshot of my Password Creator Application and a link to the application if you are in need of a new secure password: 
+Here is a screenshot of my Password Creator Application and a link to the application if you are in need of a new secure password: https://tylermifflin.github.io/Password-Creator/
+![Screenshot 2023-03-09 at 4 35 38 PM](https://user-images.githubusercontent.com/123903709/224185112-4b69d686-bb9a-449e-855c-a19113ee3846.png)
