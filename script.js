@@ -20,7 +20,7 @@ function generatePassword() {
   var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var numbers = "0123456789";
   var specialcharacters = "!@#$%^&*()_+~`|}{[]\:;?><,./-=";
-  var password = "";
+  var includedcharacters = "";
   if (includelowercase === true) {
     password += lowercase;
   }
